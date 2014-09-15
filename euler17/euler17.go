@@ -44,7 +44,6 @@ func main() {
 	}
 
 	fmt.Println(sum + len("onethousand"))
-	//fmt.Println(strconv.FormatInt(5, 10))
 	t1 := time.Now()
 	fmt.Println("Runtime: ", t1.Sub(t0))
 }
