@@ -1,20 +1,16 @@
 // https://projecteuler.net/problem=24
 //
 // Output:
-// 4179871
-// Runtime:  552.135279ms
+// [2 7 8 3 9 1 5 4 6 0]
+// Runtime:  131.02us
 
 package main
 
 import (
 	"fmt"
-	//"math"
 	"math/big"
 	"time"
 )
-
-// Limit can be lowered from 28123 to 20161
-const numDigits int = 3
 
 func main() {
 	t0 := time.Now()
