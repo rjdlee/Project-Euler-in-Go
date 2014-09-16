@@ -2,7 +2,7 @@
 //
 // Output:
 // 4179871
-// Runtime:  1.123195423s
+// Runtime:  552.135279ms
 
 package main
 
@@ -11,7 +11,8 @@ import (
 	"time"
 )
 
-const maxNum int = 28123
+// Limit can be lowered from 28123 to 20161
+const maxNum int = 20161 + 1
 
 func main() {
 	t0 := time.Now()
