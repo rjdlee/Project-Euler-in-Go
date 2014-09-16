@@ -2,7 +2,7 @@
 //
 // Output:
 // 4179871
-// Runtime:  4.327201824s
+// Runtime:  1.123195423s
 
 package main
 
@@ -35,8 +35,10 @@ func main() {
 
 	// Find the sums of all abundant numbers
 	for i := 0; i < len(abundantNums); i++ {
-		for j := 0; j < len(abundantNums); j++ {
-			sumAbunNums[abundantNums[i]+abundantNums[j]] = true
+		for j := i; j < len(abundantNums); j++ {
+			if abundantNums[i]+abundantNums[j] < maxNum {
+				sumAbunNums[abundantNums[i]+abundantNums[j]] = true
+			}
 		}
 
 	}
