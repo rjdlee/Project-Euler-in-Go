@@ -1,8 +1,9 @@
-// https://projecteuler.net/problem=23
+// https://projecteuler.net/problem=25
+//
+// Manually calculated rather than computer calculated due to poor support for large numbers
 //
 // Output:
-// 4179871
-// Runtime: 552.135279ms
+// Nan
 package main
 
 import (
