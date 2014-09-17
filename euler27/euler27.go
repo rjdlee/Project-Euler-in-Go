@@ -1,6 +1,9 @@
 // https://projecteuler.net/problem=25
 //
 // Go implementation of http://www.mathblog.dk/project-euler-27-quadratic-formula-primes-consecutive-values/
+// Can be solved easier using: n^2-(2p-1)n+p^2-p+41
+// Where |2p-1| < 1000 and |p^2-p+41| < 1000
+// http://mathworld.wolfram.com/Prime-GeneratingPolynomial.html
 //
 // Output:
 // Nan
@@ -53,11 +56,15 @@ func main() {
 						aodd = -1
 					}
 					prime := int(math.Abs(float64(n*n + (a+aodd)*n + sign*i)))
-					for k := 0; k <= prime; k++ {
+
+					if primes[k] == false && k == prime {
+						n++
+					}
+					/*for k := 0; k <= prime; k++ {
 						if primes[k] == false && k == prime {
 							n++
 						}
-					}
+					}*/
 					if n > nMax {
 						aMax = a
 						bMax = i
