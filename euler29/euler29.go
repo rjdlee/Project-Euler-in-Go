@@ -1,10 +1,9 @@
-// https://projecteuler.net/problem=28
+// https://projecteuler.net/problem=29
 //
-// Solved by hand
+// Solved by hand by finding the maximum combinations minus a^n when
 //
 // Output:
-// 669171001
-// Runtime:  71.224us
+// Nan
 
 package main
 
